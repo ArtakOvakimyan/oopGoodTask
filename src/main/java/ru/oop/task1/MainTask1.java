@@ -16,12 +16,16 @@ package ru.oop.task1;
  * @since 21.10.2020
  */
 public class MainTask1 {
-
     /**
      * Переехать из текущего места в заданную точку
      */
     public static void moveTo(Person person, Position destination) {
-        // TODO
+        Car car = new Car(person);
+        car.goToNearestPosition(destination);
+        if (person.getPosition() != destination) {
+            person.walk(destination);
+        }
+
         assert person.getPosition() == destination;
     }
 }

@@ -26,7 +26,13 @@ public class MainTask2 {
      * на любом, заранее определённом транспорте
      */
     public static void moveTo(Person person, Position destination) {
-        // TODO
+        Transport car = new Car(person);
+        person.walk(car.getPosition());
+        car.goToNearestPosition(destination);
+        if (person.getPosition() != destination) {
+            person.walk(destination);
+        }
+
         assert person.getPosition() == destination;
     }
 }
