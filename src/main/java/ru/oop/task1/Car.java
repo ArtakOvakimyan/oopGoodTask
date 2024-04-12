@@ -1,5 +1,11 @@
 package ru.oop.task1;
 
+/**
+ * Машина.
+ *
+ * @author ArtakOvakimyan
+ * @since 12.04.2024
+ */
 public class Car {
     public Car(Person person) {
 

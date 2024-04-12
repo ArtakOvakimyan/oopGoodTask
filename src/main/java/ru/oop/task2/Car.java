@@ -1,5 +1,11 @@
 package ru.oop.task2;
 
+/**
+ * Машина. Вид транспорта
+ *
+ * @author ArtakOvakimyan
+ * @since 12.04.2024
+ */
 public class Car implements Transport {
     public Car(Person person) {
 
