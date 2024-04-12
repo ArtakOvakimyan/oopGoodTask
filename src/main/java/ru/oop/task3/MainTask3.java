@@ -31,10 +31,7 @@ public class MainTask3 {
             person.walk(transport.getPosition());
             transport.goToNearestPosition(destination);
         }
-
-        if (person.getPosition() != destination) {
-            person.walk(destination);
-        }
+        person.walk(destination);
 
         assert person.getPosition() == destination;
     }

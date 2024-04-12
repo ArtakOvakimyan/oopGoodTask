@@ -29,9 +29,7 @@ public class MainTask2 {
         Transport car = new Car(person);
         person.walk(car.getPosition());
         car.goToNearestPosition(destination);
-        if (person.getPosition() != destination) {
-            person.walk(destination);
-        }
+        person.walk(destination);
 
         assert person.getPosition() == destination;
     }
